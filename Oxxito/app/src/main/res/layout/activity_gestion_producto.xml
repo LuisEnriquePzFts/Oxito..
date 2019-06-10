@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gestión de Productos"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_codigo"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        <EditText
+            android:id="@+id/txt_codigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_nombre_producto"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <EditText
+            android:id="@+id/txt_producto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"/>
+        <requestFocus/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_precio"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <EditText
+            android:id="@+id/lbl_precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_existencia"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>/>
+        <EditText
+            android:id="@+id/txt_existencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_fecha_caducidad"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_fecha_caducidad"
+            android:ems="10"
+            android:inputType="date"/>
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Actualizar"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_weight=""
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_actualizar"/>
+        <Button
+            android:id="@+id/btn_eliminar"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_eliminar"/>
+        <Button
+            android:id="@+id/btn_cancelar"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_cancelar"/>
+
+    </LinearLayout>
+
+</LinearLayout>
